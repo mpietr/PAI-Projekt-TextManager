@@ -1,4 +1,5 @@
 # TextManager
+Maria Pietras, 148145
 ## Aplikacja służąca do zarządzania zasobami tekstowymi
 
 Angular 16.0.5 + Java + Spring Boot + MySQL (w `application.properties` konfiguracja wykorzystująca domyślną bazę `test` w `XAMPP`)
