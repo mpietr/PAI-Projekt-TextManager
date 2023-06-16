@@ -1,0 +1,13 @@
+.text-card {
+    margin: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-card {
+    min-width: 300px;
+}

@@ -1,0 +1,36 @@
+<div
+  class="create-card-container"
+  fxLayout="column"
+  fxLayoutAlign="center"
+>
+  <mat-card class="create-card">
+    <mat-card-header>
+      <mat-card-title>Create new Text Resource</mat-card-title></mat-card-header
+    >
+    <mat-card-content>
+      <form
+        [formGroup]="createForm"
+        fxLayout="column"
+        fxLayoutAlign="center stretch"
+      >
+        <mat-form-field>
+          <mat-label>Title</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Tags divided by space</mat-label>
+          <input matInput formControlName="tags" />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Text</mat-label>
+          <textarea matInput formControlName="content"></textarea>
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="onSubmit()">
+        Create
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

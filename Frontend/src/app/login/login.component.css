@@ -1,0 +1,39 @@
+.authentication-card {
+    width: 30%;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.authentication-card-container {
+    min-height: 60%;
+}
+
+
+mat-card-title {
+    font-size: xx-large;
+    margin-bottom: 16px;
+}
+
+mat-card-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+mat-card-actions button {
+    margin-top: 10px;
+}
+
+
+.log-but {
+    font-size: 18px;
+    padding: 24px 24px;
+}
+
+.reg-but {
+    font-size: 16px;
+    margin-left: 8px;
+}
+

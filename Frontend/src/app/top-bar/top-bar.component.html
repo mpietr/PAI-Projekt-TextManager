@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+    <span>{{ 'TextManager' }}</span>
+    <div>
+        <a mat-button *ngIf="!this.authenticationService.isLoggedIn()" routerLink="/login">Login</a>
+        <a mat-button *ngIf="this.authenticationService.isLoggedIn()" (click)="logout()">Logout</a>
+        <a mat-button routerLink="/dashboard">Dashboard</a>
+    </div>
+</mat-toolbar>

@@ -1,0 +1,19 @@
+<div class="container" *ngIf="textResource | async as t; else noTextMessage">
+    <mat-card class="text-card">
+        <mat-card-header>
+            <mat-card-title>{{t.name}}</mat-card-title>
+            <mat-card-subtitle> 
+                {{t.tags}}
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p class="card-text" [innerText]=t.text></p>
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+<ng-template #noTextMessage>
+    <p>Text resource not found</p>
+</ng-template>
